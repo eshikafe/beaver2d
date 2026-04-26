@@ -1,8 +1,8 @@
 [![Test](https://github.com/eshikafe/synfig-rs/actions/workflows/rust.yml/badge.svg?branch=main)](https://github.com/eshikafe/synfig-rs/actions/workflows/rust.yml)
 
-# synfig-rs
+# beaver-2d
 
-`synfig-rs` is a Rust implementation of [synfig](https://github.com/synfig/synfig).
+A 2D vector-graphics animation tool inspired by [synfig](https://github.com/synfig/synfig).
 
 ## License
 
