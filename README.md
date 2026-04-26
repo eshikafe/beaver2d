@@ -1,6 +1,6 @@
 [![Test](https://github.com/eshikafe/synfig-rs/actions/workflows/rust.yml/badge.svg?branch=main)](https://github.com/eshikafe/synfig-rs/actions/workflows/rust.yml)
 
-# beaver-2d
+# Beaver2D
 
 A 2D vector-graphics animation tool inspired by [synfig](https://github.com/synfig/synfig).
 
