@@ -1,5 +1,5 @@
 [workspace]
-members = ["synfig-core", "synfig-gui"]
+members = ["beaver2d-core", "beaver2d-gui"]
 resolver = "2"
 
 

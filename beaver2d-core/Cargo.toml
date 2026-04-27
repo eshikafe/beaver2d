@@ -1,5 +1,5 @@
 [package]
-name = "synfig-core"
+name = "beaver2d-core"
 version = "0.1.0"
 edition = "2021"
 

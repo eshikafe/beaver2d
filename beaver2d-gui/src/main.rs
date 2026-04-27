@@ -1,3 +1,8 @@
+// Beaver2D - A 2D vector graphics editor written in Rust using eframe and egui.
+// Copyright (C) 2026  Beaver2D Team
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License
+
 use eframe::egui;
 use egui::menu;
 use egui_extras;
@@ -5,24 +10,24 @@ use egui_extras;
 fn main() {
     let native_options = eframe::NativeOptions::default();
     let _ = eframe::run_native(
-        "Synfig[rs] Studio",
+        "Beaver2D",
         native_options,
-        Box::new(|cc| Ok(Box::new(SynfigStudio::new(cc)))),
+        Box::new(|cc| Ok(Box::new(Beaver2D::new(cc)))),
     );
 }
 
 #[derive(Default)]
-struct SynfigStudio {}
+struct Beaver2D {}
 
-impl SynfigStudio {
+impl Beaver2D {
     fn new(_cc: &eframe::CreationContext<'_>) -> Self {
         Self::default()
     }
 }
 
-impl eframe::App for SynfigStudio {
-   fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
-    egui_extras::install_image_loaders(ctx);
+impl eframe::App for Beaver2D {
+   fn ui(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
+    //egui_extras::install_image_loaders(ctx);
 
     egui::TopBottomPanel::top("menu").show(ctx, |ui| {
         show_menu(ui);
