@@ -29,11 +29,11 @@ impl eframe::App for Beaver2D {
    fn ui(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
     //egui_extras::install_image_loaders(ctx);
 
-    egui::TopBottomPanel::top("menu").show(ctx, |ui| {
-        show_menu(ui);
+    egui::TopBottomPanel::top("menu").show(ctx, |gui| {
+        show_menu(gui);
     });
-    egui::SidePanel::left("Toolbox").resizable(true).show(ctx, |ui| {
-           show_toolbox(ui);
+    egui::SidePanel::left("Toolbox").resizable(true).show(ctx, |gui| {
+           show_toolbox(gui);
        });
    }
    
