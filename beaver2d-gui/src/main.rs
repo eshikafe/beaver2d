@@ -4,8 +4,9 @@
 // it under the terms of the GNU General Public License
 
 use eframe::egui;
-use egui::menu;
-use egui_extras;
+use egui::MenuBar;
+use egui::Panel;
+// use egui_extras;
 
 fn main() {
     let native_options = eframe::NativeOptions::default();
@@ -26,21 +27,21 @@ impl Beaver2D {
 }
 
 impl eframe::App for Beaver2D {
-   fn ui(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
+   fn ui(&mut self, ui: &mut egui::Ui, _frame: &mut eframe::Frame) {
     //egui_extras::install_image_loaders(ctx);
 
-    egui::TopBottomPanel::top("menu").show(ctx, |gui| {
-        show_menu(gui);
+    Panel::top("menu").show_inside(ui, |ui| {
+        show_menu(ui);
     });
-    egui::SidePanel::left("Toolbox").resizable(true).show(ctx, |gui| {
-           show_toolbox(gui);
+    Panel::left("Toolbox").resizable(true).show_inside(ui, |ui| {
+           show_toolbox(ui);
        });
    }
    
 }
 
 fn show_menu(ui: &mut egui::Ui) {
-    menu::bar(ui, |ui| {
+    MenuBar::new().ui(ui, |ui| {
         ui.menu_button("File", |ui| {
             if ui.button("New").clicked() {
                 todo!()

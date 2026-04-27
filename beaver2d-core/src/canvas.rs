@@ -101,19 +101,19 @@ impl Canvas {
         })
     }
 
-    pub fn push_back(&mut self, layer: Box<Layer>) {
+    pub fn push_back(&mut self, _layer: Box<Layer>) {
         // Implementation for adding a layer to the canvas
         // Adjust this based on your actual implementation
 		unimplemented!();
     }
 
-    pub fn set_identifier(&mut self, identifier: filesystem::Identifier) {
+    pub fn set_identifier(&mut self, _identifier: filesystem::Identifier) {
         // Implementation for setting the identifier of the canvas
         // Adjust this based on your actual implementation
 		unimplemented!();
     }
 
-    pub fn set_file_name(&mut self, filename: String) {
+    pub fn set_file_name(&mut self, _filename: String) {
         // Implementation for setting the file name of the canvas
         // Adjust this based on your actual implementation
     }
