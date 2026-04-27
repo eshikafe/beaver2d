@@ -1,6 +1,6 @@
 
-use synfig_core::loadcanvas::*;
-use synfig_core::version::*;
+use beaver2d_core::loadcanvas::*;
+use beaver2d_core::version::*;
 
 #[test]
 fn load_canvas_methods() {
@@ -34,7 +34,7 @@ fn load_canvas_methods() {
 
 #[test]
 fn version_test() {
-    assert_eq!(true, synfig_check_version());
+    assert_eq!(true, beaver2d_core::version::synfig_check_version());
 
     println!("Synfig version: {}",get_version());
     println!("Synfig build info: {}", get_build_date());

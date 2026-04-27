@@ -1,4 +1,4 @@
-use synfig_core::uniqueid::*;
+use beaver2d_core::uniqueid::*;
 
 #[test]
 fn test_id() {
