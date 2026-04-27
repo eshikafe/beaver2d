@@ -6,27 +6,17 @@ use crate::color::Color;
 use crate::layer::Layer;
 use crate::vector::Vector;
 
-// SYNFIG_VERSION
-// Synfig API Version
-//
-//	SYNFIG_VERSION can be set to ensure
-//	compile-time compatibility with future versions
-//	of Synfig. The first two digits are the major
-//	version, the second two digits are the minor
-//	version, and the last two digits are the
-//	revision release.
-//
 
-pub const SYNFIG_VERSION: &str = env!("CARGO_PKG_VERSION");
+pub const BEAVER2D_VERSION: &str = env!("CARGO_PKG_VERSION");
 
 // Increment this value whenever
 // the library changes in a way
 // that breaks library compatibility
-pub const SYNFIG_LIBRARY_VERSION: usize = 50;
+pub const BEAVER2D_LIBRARY_VERSION: usize = 50;
 
-pub fn synfig_check_version() -> bool {
+pub fn check_version() -> bool {
     check_version_(
-        SYNFIG_LIBRARY_VERSION,
+        BEAVER2D_LIBRARY_VERSION,
         mem::size_of::<Vector>(),
         mem::size_of::<Color>(),
         mem::size_of::<Canvas>(),
@@ -49,10 +39,10 @@ fn check_version_(
 ) -> bool {
     let mut ret: bool = true;
 
-    if version != SYNFIG_LIBRARY_VERSION {
+    if version != BEAVER2D_LIBRARY_VERSION {
         error!(
             "API Version mismatch (LIB:{}, PROG:{})",
-            SYNFIG_LIBRARY_VERSION, version
+            BEAVER2D_LIBRARY_VERSION, version
         );
         ret = false;
     }
@@ -93,7 +83,7 @@ fn check_version_(
 }
 
 pub fn get_version() -> &'static str {
-    SYNFIG_VERSION
+    BEAVER2D_VERSION
 }
 
 pub fn get_build_date() -> String {
