@@ -1,4 +1,4 @@
-// Beaver2D - A 2D vector graphics editor written in Rust using eframe and egui.
+// Beaver2D - A 2D vector graphics animation tool
 // Copyright (C) 2026  Beaver2D Team
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License
