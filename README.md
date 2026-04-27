@@ -2,7 +2,7 @@
 
 # Beaver2d
 
-A 2D vector-graphics animation tool inspired by [synfig](https://github.com/synfig/synfig).
+A 2D vector-graphics animation tool inspired by [synfig](https://www.synfig.org/).
 
 ## License
 
