@@ -34,8 +34,8 @@ fn load_canvas_methods() {
 
 #[test]
 fn version_test() {
-    assert_eq!(true, beaver2d_core::version::synfig_check_version());
+    assert_eq!(true, beaver2d_core::version::check_version());
 
-    println!("Synfig version: {}",get_version());
-    println!("Synfig build info: {}", get_build_date());
+    println!("Beaver2D version: {}", beaver2d_core::version::get_version());
+    println!("Beaver2D build info: {}", beaver2d_core::version::get_build_date());
 }
